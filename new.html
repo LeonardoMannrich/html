@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <datalist id="cores">
+        <option value="Amarelo">Amarelo</option>
+        <option value="Azul">Azul</option>
+        <option value="Branco">Branco</option>
+        <option value="cinza">Cinza</option>
+        <option value="Prata">Prata</option>
+        <option value="preto">preto</option>
+        <option value="verde">verde</option>
+        <option value="vermelho">vermelho</option>
+    </datalist>
+    <form action="tabela-filtros.html" method="get">
+        <label for="campo-filtro-marca">Marca</label>
+        <select name="marca" id="campo-filtro-marca">
+            <option disabled selected>selecione uma marca </option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Ford">Ford</option>
+            <option value="Audi">Audi</option>
+            <option value="Fiat">Fiat</option>
+            <option value="BMW">BMW</option>
+        </select>
+        <label for="campo-cor">cor</label>
+        <input name="cor" id="campo-cor" list="cores">
+
+        <br>
+        <label for="campo-filtro-ano-minimo"> Ano minimo</label>
+        <input type="number" min="1800" max="2025" id="campo-filtro-ano-minimo" name="ano-minimo">
+
+        <label for="campo-filtro-ano-maximo"> Ano maximo</label>
+        <input type="number" min="1801" max="2025" id="campo-filtro-ano-maximo" name="ano-maximo">
+        <br>
+        <label for="campo-filtro-ano-minimo"> Ano minimo</label>
+        <input type="number" min="1.0" max="1.00" id="campo-filtro-ano-minimo" name="ano-minimo">
+
+        <label for="campo-filtro-ano-maximo"> Ano maximo</label>
+        <input type="number" min="2.0" max="1.00" id="campo-filtro-ano-maximo" name="ano-maximo">
+
+        <br>
+        <input type="radio" id="campo-filtro-estado-novo" name="estado" value="novo">
+        <label for="campo-filtro-estado-novo">novo</label>
+        <input type="radio">
+
+        <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i> Pesquisar</button>
+    </form>
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Preço</th>
+                <th>Condição</th>
+                <th>Quilometragem</th>
+                <th>Cor</th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ford</td>
+                <td>Corcel</td>
+                <td>1970</td>
+                <td>R$ 50000,00</td>
+                <td>Usado</td>
+                <td>150.000 KM</td>
+                <td>Amarelo</td>
+                <td>
+                    <a
+                        href="https://www.webmotors.com.br/comprar/ford/corcel/14-ldo-8v-gasolina-2p-manual/2-portas/1976/53675627?pos=j53675627g:&np=1">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Volkswagen</td>
+                <td>Gol Quadrado</td>
+                <td>1995</td>
+                <td>R$ 15000,00</td>
+                <td>Usado</td>
+                <td>98.000 KM</td>
+                <td>Cinza</td>
+                <td>
+                    <a
+                        href="https://www.webmotors.com.br/comprar/volkswagen/virtus/14-250-tsi-exclusive-automatico/4-portas/2023-2024/53692085?pos=c53692085m:&np=1">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Volkswagen</td>
+                <td>Virtus</td>
+                <td>2024</td>
+                <td>R$ 155.990,00</td>
+                <td>Novo</td>
+                <td>0 KM</td>
+                <td>Azul</td>
+                <td>
+                    <a
+                        href="https://www.webmotors.com.br/comprar/fiat/uno/10-mille-8v-gasolina-2p-manual/2-portas/1993/53456847?pos=i53456847g:&np=1">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Fiat</td>
+                <td>Uno Turbo</td>
+                <td>1998</td>
+                <td>R$ 20.000,00</td>
+                <td>Usado</td>
+                <td>470.000 KM</td>
+                <td>Cinza</td>
+                <td>
+                    <a
+                        href="https://www.webmotors.com.br/comprar/ford/corcel/14-ldo-8v-gasolina-2p-manual/2-portas/1976/53675627?pos=j53675627g:&np=1">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://kit.fontawesome.com/8d3d7e1690.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

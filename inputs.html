@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo de inputs</h1>
+
+    <h2>Agendamento de consulta do paciente</h2>
+<form method="get" action= "https//localhost:5000/salvar.php">
+    <label for="campo_nome">Nome</label>
+    <input type="text"  id="campo_nome" name="Nome">
+    <br/>
+    <br/>
+    <label for="campo_sobrenome">Sobrenome</label>
+    <input type ="text" id= "campo_sobrenome" name="Sobrenome">
+    <br/>
+    <br/>
+    <label for="campo_idade">idade</label>
+    <input type="number" min="0" max="150" id="campo_idade" name="idade">
+    <br/>
+    <br/>
+    <label for="campo_peso">peso</label>
+    <input type="number" min="0" max="1000" step="0.01" id="campo_peso" name="peso">
+    <br/>
+    <br/>
+    <label for="campo_data_nascimento">Data de Nascimento</label>
+    <input type="date" id="campo_data_nascimento" name="Data-de-nascimento">
+    <br/>
+    <br/>
+    <label for="campo_email">E-mail</label>
+    <input type="email" id ="campo_email" name="E-mail">
+    <br/>
+    <br/>
+    <label for="campo_hora_nascimento">Hora de nascimento</label>
+    <input type="time" id="campo_hora_nascimento" name="Hora-de-nascimento">
+    <br/>
+    <br/>
+    <label for="campo_data_hora_agendamento"> Data de Agendamento</label>
+    <input type="datetime-local" id="campo_data_hora_agendamento" name="Data-de-Agendamento">
+    
+    <button type="submit">salvar</button>
+
+    <br/>
+    <br/>
+    <h2>Login</h2>
+    <form action="http://localhost:5001/login" method="post">
+    <label for="campo_username">Username</label>
+    <br/>
+    <input type="text" id="campo_username" name="username" autocomplete="off">
+    <br/>
+    <label for="campo-senha">senha</label>
+    <br/>
+    <input type="password" id="campo_senha" name="senha">
+    <br/>
+    <input type="checkbox" id="campo_manter_logado" name="manter_logado">
+    <label for="campo_manter_logado">Manter logado</label>
+    <br/>
+    <button>Entrar</button>
+<!--     
+    username
+    password
+    Eu não sou um robô -->
+</form>
+</body>
+</html>

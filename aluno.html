@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Aluno</h1>
+        <h2>Registro de Notas</h2>
+    <form action="https://localhost:5001/alunos/Cadastrar.php" method="post">
+    <label for="campo_nome">Nome</label>
+    <input type="text"id="nome" name="campo_nome">
+    <br/>
+    <br/>
+    <label for="campo_nota1">Nota1</label>
+    <input type="number" min="0" max="10" id= "campo_nota1" name="Nota1">
+    <br/>
+    <br/>
+    <label for="campo_nota2">Nota2</label>
+    <input type="number" min="0" max="10" id="campo_nota2" name="Nota2">
+    <br/>
+    <br/>
+    <label for="campo_nota3">Nota3</label>
+    <input type="number" min="0" max="10" id="campo_nota3" name="Nota3">
+    <br/>
+    <br/>
+    <button type="submit">enviar</button>
+    </form>
+</body>
+</html>

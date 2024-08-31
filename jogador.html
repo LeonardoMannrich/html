@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="tabela-filtros.html" method="get">
+    <datalist id="Times">
+<option value="Corinthians">Corinthians</option>
+<option value="Bota_fogo">Bota_fogo</option>
+<option value="Flamengo">Flamengo</option>
+<option value="Gremio">Gremio</option>
+<option value="Fluminense">Fluminense</option>
+
+<label for="campo-time">cor</label>
+<input name="time" id="campo-time" list="Times">
+        </form>
+    </datalist> -->
+    <datalist id="Time">
+        <option value="Amarelo">Amarelo</option>
+        <option value="Azul">Azul</option>
+        <option value="Branco">Branco</option>
+        <option value="cinza">Cinza</option>
+        <option value="Prata">Prata</option>
+        <option value="preto">preto</option>
+        <option value="verde">verde</option>
+        <option value="vermelho">vermelho</option>
+    </datalist>
+    <form action="tabela-filtros.html" method="get">
+        <label for="campo-filtro-marca">Marca</label>
+        <select name="marca" id="campo-filtro-marca">
+            <option disabled selected>selecione uma marca </option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Ford">Ford</option>
+            <option value="Audi">Audi</option>
+            <option value="Fiat">Fiat</option>
+            <option value="BMW">BMW</option>
+        </select>
+        <label for="campo-cor">cor</label>
+        <input name="Time" id="campo-cor" list="cores">
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--enctype: é o forfmato de codificação que será enviado os dados do formulário
+    application/x-www-form-urlencoded: padrão, enviado no formato de chave valor
+multipart/form-data: é utiizado para fomulários com upload de arquivos-->
+    <form action="http//localhost:5001/carros/cadastrar" method="post" enctype="multipart/form-data">
+
+        <div>
+            <!-- <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Preço</th>
+            <th>Condição</th>
+            <th>Quilometragem</th>
+            <th>Cor</th> -->
+
+            <label for="campo-filtro-marca">Marca</label>
+            <select name="marca" id="campo-filtro-marca">
+                <option disabled selected>selecion uma marca </option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Ford">Ford</option>
+                <option value="Audi">Audi</option>
+                <option value="Fiat">Fiat</option>
+                <option value="BMW">BMW</option>
+            </select>
+        </div>
+        <div>
+            <label for="campo-cor">cor</label>
+            <input name="cor" id="campo-cor" list="cores">
+        </div>
+        <div>
+
+            <label for="campo-modelo">modelo</label>
+            <input name="text" id="modelo" id="campo-modelo">
+        </div>
+        <div>
+
+            <label for="campo-ano">Ano</label>
+            <input name="number" id="ano" id="campo-ano">
+        </div>
+        <div>
+
+            <label for="campo-quilometragem">Quilometragem</label>
+            <input name="number" id="Quilometragem" id="campo-quilometragem">
+        </div>
+
+        <div>
+
+            <label for="campo-preco">preco</label>
+            <input name="number" id="preco" id="campo-preco">
+        </div>
+        <div>
+            <input type="radio" id="campo_estado_novo" name="estado" value="novo">
+            <label for="campo-filtro-estado-novo">Novo</label>
+            <input type="radio" id="campo_estado_usado" name="estado" value="usado">
+            <label for="campo-filtro-estado-usado">Usado</label>
+        </div>
+        <div>
+            <label for="campo-arquivo">arquivo</label>
+            <input type="file" name="arquivo" id="campo-arquivo" accept="image/jpeg, image/png">
+        </div>
+        <button type="submit">
+            <i class="fa-solid fa-floppy-disk"></i>cadastrar
+        </button>
+    </form>
+
+    <script src="https://kit.fontawesome.com/8d3d7e1690.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
